@@ -41,7 +41,6 @@ const Contact = () => {
           <div className="contact-detail">
             <a href="www.linkedin.com/in/harsh-choudhary5" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} alt="LinkedIn" className='social-img' />
-              
             </a>
             <p>Harsh Choudhary
             </p>
@@ -58,7 +57,6 @@ const Contact = () => {
           <div className="contact-detail">
             <a href="harshchoudharyv@gmail.com" target='_blank'>
             <img src={mail} alt="Email" className='social-img' />
-            
             </a>
             <p>harshchoudharyv@gmail.com</p>
           </div>
