@@ -39,7 +39,7 @@ const Contact = () => {
           
           {/* LinkedIn */}
           <div className="contact-detail">
-            <a href="www.linkedin.com/in/harsh-choudhary5" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/harsh-choudhary5" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} alt="LinkedIn" className='social-img' />
             </a>
             <p>Harsh Choudhary
@@ -49,13 +49,14 @@ const Contact = () => {
           {/* GitHub */}
           <div className="contact-detail">
             <a href="https://github.com/mrHarshchoudhary" target="_blank" rel="noopener noreferrer">
+          
               <img src={github} alt="GitHub" className='social-img' />  
             </a>
             <p>mrHarshchoudhary</p>
           </div>
           {/* Email */}
           <div className="contact-detail">
-            <a href="harshchoudharyv@gmail.com" target='_blank'>
+            <a href="mailto:harshchoudharyv@gmail.com" target='_blank'>
             <img src={mail} alt="Email" className='social-img' />
             </a>
             <p>harshchoudharyv@gmail.com</p>
