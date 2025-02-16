@@ -16,11 +16,12 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profile_img} alt="Profile" className="circle-img" />
       <h1>
-        <span>I' am Harsh Choudhary,</span> Software developer based in India
-      </h1>
-      <p>
-        I am a Software developer from Vadodara, Gujarat, pursuing my BTech in Information Technology (3rd year).
-      </p>
+    <span>Hi, I'm Harsh Choudhary!</span> A Passionate Software Developer
+  </h1>
+  <p>
+    I'm a third-year **BTech student in Information Technology** from **Vadodara, Gujarat**.  
+    I love building web applications and exploring new technologies in software development.
+  </p>
       <div className="hero-action">
         {/* Connect With Me button */}
         <div className="hero-connect" onClick={handleScrollToContact}>

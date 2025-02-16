@@ -1,28 +1,31 @@
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 170px;
 }
-.nav-menu{
+
+.nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
-  gap:60px;
+  gap: 60px;
   font-size: 20px;
 }
 
-.nav-connect{
-  padding:20px 40px;
+.nav-connect {
+  padding: 20px 40px;
   border-radius: 50px;
-  background: linear-gradient(267deg ,#DA7C25 0.36%, #B923E1 102.36%);
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.36%);
   font-size: 22px;
   cursor: pointer;
   transition: 0.5s;
 }
-.nav-connect:hover{
+
+.nav-connect:hover {
   transform: scale(1.05);
 }
+
 .nav-menu li p {
   cursor: pointer;
   color: #aaa;
@@ -31,71 +34,68 @@
 
 .nav-menu li p:hover,
 .nav-menu li p.active {
-  color: #fff; /* Highlight the active link */
-  /* font-weight: bold; */
-}
-.nav-connect {
-  cursor: pointer;
-  /* font-size: 18px; */
-  /* color: #aaa; */
-  transition: color 0.3s;
+  color: #fff;
 }
 
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
-.logo{
-    margin-top: 0; /* Reset any excessive top margin */
-    width: 80px; /* Smaller icon size */
-    height: 80px; /* Match width and height */
-    object-fit: cover; /* Ensure the image fits nicely */
-    border-radius: 50%; /* Maintain circular shape */
-    border: none; /* Remove unnecessary border */
-    margin-right: 10px; /* Add spacing between icon and text */
-    vertical-align: middle; /* Align icons with text vertically */
-  
-}
-.nav-mob-close{
+.nav-mob-close,
+.nav-mob-open {
   display: none;
 }
-.nav-mob-open{
-  display: none;
-}
-@media(max-width:768px){
-  .navbar{
-    margin:20px 50px;
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 20px;
   }
-  .nav-connect{
+
+  .nav-connect {
     display: none;
-
   }
-  .nav-mob-open{
+
+  .nav-mob-open {
     display: block;
     position: fixed;
-    right:30px
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    font-size: 30px;
+    color: #fff;
   }
-  .nav-mob-close{
+
+  .nav-mob-close {
     display: block;
-    position: relative;
-    top:30px;
-    left:290px;
-    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    z-index: 3;
   }
-  .nav-menu{
+
+  .nav-menu {
     position: fixed;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     top: 0;
-    gap:30px;
-    background-color: #1F0016;
-    width:350px;
-    height:100%;
-    z-index:2;
-    transition: right 0.5s;
     right: -350px;
+    gap: 30px;
+    background-color: #1F0016;
+    width: 250px;
+    height: 100%;
+    padding-top: 80px;
+    z-index: 2;
+    transition: right 0.5s;
   }
-  .nav-menu-li{
-    font-size: 30px;
-    padding-left: 100px;
-    flex-direction: row;
-    gap:20px;
+
+  .nav-menu li p {
+    font-size: 24px;
+    padding-left: 20px;
   }
 }

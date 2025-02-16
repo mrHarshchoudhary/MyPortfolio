@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #1e1e1e;
+  color: white;
 }
 
 /* Title Styling */
@@ -14,12 +16,11 @@
   margin-bottom: 15px;
   text-transform: uppercase;
   font-weight: bold;
- 
 }
 
 .mywork-title p {
   font-size: 1.2rem;
-  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background: linear-gradient(270deg, #e3e1df 10%, #ffffff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -30,28 +31,25 @@
 /* Projects Grid Layout */
 .mywork-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /* Project Card Styling */
 .project-card {
-  /* background-color: #1e1e1e; */
+  background-color: #2c2c2c;
   padding: 20px;
-  border: 2px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  position: relative;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  /* background: linear-gradient(45deg, #3f0028, #583200); */
 }
 
 .project-card h2 {
@@ -67,27 +65,16 @@
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: white;
-  height: auto; /* Allow description to grow as needed */
+  color: #e6e9e6;
   transition: max-height 0.3s ease;
-  overflow: hidden; /* Prevent layout shift */
-}
-
-/* Description Container */
-.description-container {
-  max-height: 150px; /* Set fixed height for the card */
   overflow: hidden;
-}
-
-.description-container p.expanded {
-  max-height: 1000px; /* Allow the expanded text to overflow */
-  overflow: visible;
 }
 
 /* Buttons Styling */
 .project-buttons {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .btn-website, .btn-source {
@@ -98,12 +85,12 @@
   border-radius: 5px;
   font-size: 1rem;
   text-align: center;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex: 1;
 }
 
 .btn-website:hover, .btn-source:hover {
-  background-color: #040404;
+  transform: scale(1.05);
 }
 
 /* Read More Button Styling */
@@ -115,6 +102,7 @@
   text-decoration: underline;
   cursor: pointer;
   margin-left: 5px;
+  transition: color 0.3s ease;
 }
 
 .read-more-btn:hover {
@@ -125,4 +113,45 @@
 .arrow-up, .arrow-down {
   font-size: 1.2rem;
   margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mywork-container {
+    padding: 30px 10px;
+  }
+
+  .mywork-title h1 {
+    font-size: 2rem;
+  }
+
+  .mywork-title p {
+    font-size: 1rem;
+  }
+
+  .mywork-projects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .btn-website, .btn-source {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .read-more-btn {
+    font-size: 0.9rem;
+  }
 }

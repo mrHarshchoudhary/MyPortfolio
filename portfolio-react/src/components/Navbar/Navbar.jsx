@@ -3,29 +3,34 @@ import './Navbar.css';
 import logo from '../../assets/logo.png';
 import { IoIosMenu } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
+
 const Navbar = () => {
   const [menu, setMenu] = useState('home');
-  const menuRef=useRef();
-  const openMenu=()=>{
-    menuRef.current.style.right="0";
-  }
-  const closeMenu=()=>{
-    menuRef.current.style.right="-350px";
-  }
+  const menuRef = useRef();
+
+  const openMenu = () => {
+    menuRef.current.style.right = "0";
+  };
+
+  const closeMenu = () => {
+    menuRef.current.style.right = "-350px";
+  };
+
   const handleScroll = (id) => {
     setMenu(id); // Update the active menu state
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+    closeMenu(); // Close the mobile menu after clicking a link
   };
 
   return (
     <div className="navbar">
       <img src={logo} alt="Harsh Choudhary" className='logo' />
-      <IoIosMenu onClick={openMenu}  className='nav-mob-open'/>
+      <IoIosMenu onClick={openMenu} className='nav-mob-open' />
       <ul ref={menuRef} className="nav-menu">
-      <IoCloseOutline onClick={closeMenu}  className='nav-mob-close' />
+        <IoCloseOutline onClick={closeMenu} className='nav-mob-close' />
         <li>
           <p
             onClick={() => handleScroll('home')}
@@ -69,7 +74,7 @@ const Navbar = () => {
       </ul>
       <div
         className="nav-connect"
-        onClick={() => handleScroll('contact')} // Scroll to 'contact' section
+        onClick={() => handleScroll('contact')}
       >
         Connect with me
       </div>
