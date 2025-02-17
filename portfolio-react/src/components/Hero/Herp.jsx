@@ -19,7 +19,7 @@ const Hero = () => {
     <span>Hi, I'm Harsh Choudhary!</span> A Passionate Software Developer
   </h1>
   <p>
-    I'm a third-year **BTech student in Information Technology** from **Vadodara, Gujarat**.  
+    I'm a third-year **BTech student in Information Technology from Vadodara, Gujarat.  
     I love building web applications and exploring new technologies in software development.
   </p>
       <div className="hero-action">

@@ -10,7 +10,7 @@ const servicesData = [
   {
     title: "Backend Development",
     description:
-      "I develop secure and efficient backend systems utilizing Spring Boot, MySQL, and MongoDB to ensure scalability and reliability in applications.",
+      "I develop secure and efficient backend systems utilizing Express.js, MySQL, and MongoDB to ensure scalability and reliability in applications.",
   },
   {
     title: "AI-Powered Tools",

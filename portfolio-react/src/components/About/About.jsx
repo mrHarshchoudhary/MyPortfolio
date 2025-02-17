@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import profileImg from '../../assets/profile_img.jpg';
+
 import { FaJava, FaPython, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
 import { SiSpringboot, SiMongodb, SiMysql, SiNumpy, SiPandas, SiHibernate } from 'react-icons/si';
 
@@ -13,7 +14,7 @@ const About = () => {
       <div className="about-section">
         {/* Left Section - Profile Image */}
         <div className="about-left">
-          <img src={profileImg} alt="Profile" />
+          {/* <img src={myphoto} alt="Profile" /> */}
         </div>
 
         {/* Right Section - Content */}
