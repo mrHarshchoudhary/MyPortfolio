@@ -57,10 +57,7 @@ const About = () => {
                 <FaReact className="skill-icon" />
                 <p>React.js</p>
               </div>
-              <div className="skill-card">
-                <SiSpringboot className="skill-icon" />
-                <p>Spring Boot</p>
-              </div>
+            
               <div className="skill-card">
                 <FaNodeJs className="skill-icon" />
                 <p>Node.js</p>
