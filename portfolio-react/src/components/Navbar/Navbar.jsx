@@ -6,14 +6,17 @@ import { IoCloseOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const [menu, setMenu] = useState('home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track if the menu is open
   const menuRef = useRef();
 
   const openMenu = () => {
     menuRef.current.style.right = "0";
+    setIsMenuOpen(true); // Set menu open state to true
   };
 
   const closeMenu = () => {
     menuRef.current.style.right = "-350px";
+    setIsMenuOpen(false); // Set menu open state to false
   };
 
   const handleScroll = (id) => {
@@ -28,9 +31,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <img src={logo} alt="Harsh Choudhary" className='logo' />
-      <IoIosMenu onClick={openMenu} className='nav-mob-open' />
+      {!isMenuOpen && <IoIosMenu onClick={openMenu} className='nav-mob-open' />}
       <ul ref={menuRef} className="nav-menu">
-        <IoCloseOutline onClick={closeMenu} className='nav-mob-close' />
+        {isMenuOpen && <IoCloseOutline onClick={closeMenu} className='nav-mob-close' />}
         <li>
           <p
             onClick={() => handleScroll('home')}

@@ -60,7 +60,7 @@
   }
 
   .nav-mob-open {
-    display: block;
+    display: none;
     position: fixed;
     right: 20px;
     top: 20px;
@@ -69,16 +69,26 @@
     color: #fff;
     cursor: pointer;
   }
-
+  
   .nav-mob-close {
-    display: block;
-    position: fixed; /* Changed to fixed to ensure it stays in place */
+    display: none;
+    position: fixed;
     top: 20px;
     right: 20px;
     font-size: 30px;
     color: #fff;
     z-index: 4; /* Ensure the close button is above the sidebar */
     cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-mob-open {
+      display: block;
+    }
+  
+    .nav-mob-close {
+      display: block;
+    }
   }
 
   .nav-menu {
@@ -100,5 +110,14 @@
     font-size: 24px;
     padding-left: 20px;
     cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .nav-mob-open {
+    display: block;
+  }
+
+  .nav-mob-close {
+    display: block;
   }
 }
