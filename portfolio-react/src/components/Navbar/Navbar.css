@@ -64,19 +64,21 @@
     position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 3;
+    z-index: 3; /* Ensure the open button is above everything */
     font-size: 30px;
     color: #fff;
+    cursor: pointer;
   }
 
   .nav-mob-close {
     display: block;
-    position: absolute;
+    position: fixed; /* Changed to fixed to ensure it stays in place */
     top: 20px;
     right: 20px;
     font-size: 30px;
     color: #fff;
-    z-index: 4; /* Increased z-index to ensure it's above the sidebar */
+    z-index: 4; /* Ensure the close button is above the sidebar */
+    cursor: pointer;
   }
 
   .nav-menu {
@@ -90,13 +92,13 @@
     width: 250px;
     height: 100%;
     padding-top: 80px;
-    z-index: 2; /* Lower z-index than the close icon */
+    z-index: 2; /* Ensure the sidebar is below the close button */
     transition: right 0.5s;
   }
 
   .nav-menu li p {
     font-size: 24px;
     padding-left: 20px;
-    z-index: 1; /* Ensure menu items have a lower z-index */
+    cursor: pointer;
   }
 }

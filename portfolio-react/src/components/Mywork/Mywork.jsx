@@ -13,6 +13,13 @@ const MyWork = () => {
 
   const projects = [
     {
+      title: 'Gym',
+      description:
+        'SkillWave is an AI-based learning platform that helps users generate MCQs, quizzes, long-answer, and short-answer questions based on any topic they provide. This project is designed to assist students, educators, and learners by creating customized learning materials instantly.',
+      websiteLink: 'https://yourwebsite.com',
+      sourceCodeLink: 'https://github.com/mrHarshchoudhary/GYM_Trannning',
+    },
+    {
       title: 'SkillWave',
       description:
         'SkillWave is an AI-based learning platform that helps users generate MCQs, quizzes, long-answer, and short-answer questions based on any topic they provide. This project is designed to assist students, educators, and learners by creating customized learning materials instantly.',
@@ -63,9 +70,9 @@ const MyWork = () => {
               )}
             </p>
             <div className="project-buttons">
-              <a href={project.websiteLink} target="_blank" rel="noopener noreferrer" className="btn-website">
+              {/* <a href={project.websiteLink} target="_blank" rel="noopener noreferrer" className="btn-website">
                 View Website
-              </a>
+              </a> */}
               <a href={project.sourceCodeLink} target="_blank" rel="noopener noreferrer" className="btn-source">
                 Source Code
               </a>
