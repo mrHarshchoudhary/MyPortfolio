@@ -73,9 +73,9 @@ const MyWork = () => {
               {/* <a href={project.websiteLink} target="_blank" rel="noopener noreferrer" className="btn-website">
                 View Website
               </a> */}
-              <a href={project.sourceCodeLink} target="_blank" rel="noopener noreferrer" className="btn-source">
+              {/* <a href={project.sourceCodeLink} target="_blank" rel="noopener noreferrer" className="btn-source">
                 Source Code
-              </a>
+              </a> */}
             </div>
           </div>
         ))}
