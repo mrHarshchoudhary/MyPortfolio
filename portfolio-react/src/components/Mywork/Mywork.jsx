@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Mywork.css';
+import React, { useState } from "react";
+import "./Mywork.css";
 
 const MyWork = () => {
   const [expanded, setExpanded] = useState({});
@@ -13,35 +13,37 @@ const MyWork = () => {
 
   const projects = [
     {
-      title: 'Gym',
+      title: "Gym",
       description:
-        'SkillWave is an AI-based learning platform that helps users generate MCQs, quizzes, long-answer, and short-answer questions based on any topic they provide. This project is designed to assist students, educators, and learners by creating customized learning materials instantly.',
-      websiteLink: 'https://yourwebsite.com',
-      sourceCodeLink: 'https://github.com/mrHarshchoudhary/GYM_Trannning',
+        "A personal fitness-themed website built using HTML, CSS, and JavaScript, showcasing core fitness sections such as Lift Summary, Professional Achievements, Workout Splits, and Mentoring. Designed with a clean and modern layout, this project highlights my frontend development skills and ability to create user-centric fitness pages.",
+      websiteLink: "https://gym-trannning-harsh.vercel.app/",
+      sourceCodeLink: "https://github.com/mrHarshchoudhary/GYM_Trannning",
     },
     {
-      title: 'SkillWave',
+      title: "SkillWave",
       description:
-        'SkillWave is an AI-based learning platform that helps users generate MCQs, quizzes, long-answer, and short-answer questions based on any topic they provide. This project is designed to assist students, educators, and learners by creating customized learning materials instantly.',
-      websiteLink: 'https://yourwebsite.com',
-      sourceCodeLink: 'https://github.com/mrHarshchoudhary/SkillWave',
+        "SkillWave is an AI-based learning platform that helps users generate MCQs, quizzes, long-answer, and short-answer questions based on any topic they provide. This project is designed to assist students, educators, and learners by creating customized learning materials instantly.",
+      websiteLink: "https://yourwebsite.com",
+      sourceCodeLink: "https://github.com/mrHarshchoudhary/SkillWave",
     },
-    
+
     {
-      title: 'CivicEye',
+      title: "CivicEye",
       description:
-        'CivicEye is a web-based crime reporting platform that allows users to report incidents they witness, such as accidents or criminal activities. Once reported, the system automatically notifies the nearest police stations online, ensuring quick response and action. This platform helps both citizens and law enforcement agencies to improve safety and security in real time.',
-      websiteLink: 'https://yourwebsite.com',
-      sourceCodeLink: 'https://github.com/mrHarshchoudhary/CivicEye1',
+        "CivicEye is a web-based crime reporting platform that allows users to report incidents they witness, such as accidents or criminal activities. Once reported, the system automatically notifies the nearest police stations online, ensuring quick response and action. This platform helps both citizens and law enforcement agencies to improve safety and security in real time.",
+      websiteLink: "https://yourwebsite.com",
+      sourceCodeLink: "https://github.com/mrHarshchoudhary/CivicEye1",
     },
-  
   ];
 
   return (
-    <div id='work' className="mywork-container">
+    <div id="work" className="mywork-container">
       <div className="mywork-title">
         <h1>My Project</h1>
-        <p>Here are some of the projects I’ve built while learning and improving my skills. Feel free to check them out!</p>
+        <p>
+          Here are some of the projects I’ve built while learning and improving
+          my skills. Feel free to check them out!
+        </p>
       </div>
 
       <div className="mywork-projects">
